@@ -1,0 +1,163 @@
+:root {
+    --red: hsl(4, 100%, 67%);
+    --blue-800: hsl(234, 29%, 20%);
+    --blue-700: hsl(235, 18%, 26%);
+    --grey: hsl(0, 0%,58%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0,0%,0%);
+    --font: "Roboto", serif;
+}
+
+* {
+    font-family: var(--font);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 3rem 1rem 3rem;
+}
+
+/* -------------- Mobile Design ------------------ */
+/* ------Signup-Form */
+.Page {
+
+    .successCard {
+        display: none;
+    }
+}
+
+.Card {
+    background-color: var(--white);
+
+}
+
+.Img-Box {
+        max-width: 100%;
+        overflow: hidden;
+
+        
+    }
+
+.Banner-Img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+.Text-Card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+}
+
+.Title {
+    color: var(--blue-800);
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.Description {
+    color: var(--blue-700);
+    font-size: 0.8125rem;
+    font-weight: 400;
+    padding: 0rem;
+    margin: 0rem;
+
+}
+
+.B1 {
+    width: 1rem;
+    height: 1rem;
+}
+
+.B2 {
+    width: 1rem;
+    height: 1rem;
+}
+
+.B3 {
+    width: 1rem;
+    height: 1rem;
+}
+
+.List-Items {
+    display: grid;
+    column-gap: 0.4rem;
+    row-gap: 0.75rem;
+    grid-template-columns: 0.5fr 5fr 5fr;
+    grid-template-rows: repeat(3,1fr);
+
+}
+
+.l-i {
+    color: var(--blue-700);
+    font-size: 0.8125rem;
+    font-weight: 400;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+#P1 {
+    grid-row: 1;
+    grid-column: 2/4; 
+}
+
+#P2 {
+    grid-row: 2;
+    grid-column: 2/4; 
+}
+
+#P3 {
+    grid-row: 3;
+    grid-column: 2/4; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--blue-800);
+}
+
+input {
+    color: var(--grey);
+    font-size: 0.8rem;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border-color: var(--grey);
+    border-style: solid;
+    border-width: 0.05rem;
+}
+
+.Submit {
+    margin-top: 1rem;
+    background-color: var(--blue-800);
+    color: var(--white);
+    font-size: 0.75rem;
+    border-color: var(--blue-800);
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 0.05rem;
+    padding: 1rem;
+}
+
+/* ------ Success */
+.Page.success{
+    .Card {
+        display: none;
+    }
+}

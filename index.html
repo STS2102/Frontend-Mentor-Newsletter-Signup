@@ -7,46 +7,60 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link href="./styles/style.css", rel="stylesheet">
+  <style src="main.js" defer></style>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
   <!-- Sign-up form start -->
+  <main class="Page">
+    <div class="Card">
+    <div class="Img-Box">
+      <img class = Banner-Img src="./assets/images/illustration-sign-up-mobile.svg" alt="Banner Image">
+      </div>
+      <div class="Text-Card">
+        <h1 class="Title">Stay updated!</h1>
 
-  Stay updated!
+        <p class="Description">Join 60,000+ product managers receiving monthly updates on:</p>
 
-  Join 60,000+ product managers receiving monthly updates on:
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+        <div class="List-Items">
+          <img class="B1" src="./assets/images/icon-list.svg">
+          <img class="B2" src="./assets/images/icon-list.svg">
+          <img class="B3" src="./assets/images/icon-list.svg">
+          <p class="l-i" id="P1">Product discovery and building what matters</p>
+          <p class="l-i" id="P2">Measuring to ensure updates are a success</p>
+          <p class="l-i" id="P3">And much more!</p>
+        </div>
 
-  Email address
-  email@company.com
 
-  Subscribe to monthly newsletter
+        <form id="form" novalidate>
+        <label for="email" type="text">Email address</label>
+        <input id="email" value="email@company.com"/>
+
+        <button class="Submit">Subscribe to monthly newsletter</button>
+        </form>
+        </div>
+        </div>
 
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-
+   <div class="successCard">
   Thanks for subscribing!
 
   A confirmation email has been sent to ash@loremcompany.com. 
   Please open it and click the button inside to confirm your subscription.
 
   Dismiss message
-
+  </div>
+</main>
   <!-- Success message end -->
   
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
 </body>
 </html>
