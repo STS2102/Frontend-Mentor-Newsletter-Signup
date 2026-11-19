@@ -29,7 +29,6 @@ body {
 /* -------------- Mobile Design ------------------ */
 /* ------Signup-Form */
 .Page {
-
     .successCard {
         display: none;
     }
@@ -238,4 +237,38 @@ input.Error {
     .Dismiss:hover {
         background: linear-gradient(to right,var(--pink), var(--red), var(--orange)); 
     }
+}
+
+/* Desktop Design Modifications. */
+
+@media (min-width: 35rem) {
+
+    body {
+        background-color: var(--blue-700);
+    }
+
+    .Card {
+        display: flex;
+        flex-direction: row;
+        border-radius: 2rem;
+    }
+
+    .Img-Box {
+        flex: 1;
+        margin: 1rem;
+        order: 1;
+        border-radius: 1rem;
+    }
+
+    .Banner-Img {
+        min-height: 100%;
+    }
+
+    .Text-Card {
+        flex: 1;
+        gap: 0.75rem;
+        padding: 3.5rem 2.5rem 3.5rem 2.5rem;
+    }
+
+    
 }
