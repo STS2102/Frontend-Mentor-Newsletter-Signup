@@ -253,6 +253,8 @@ input.Error {
         display: flex;
         flex-direction: row;
         border-radius: 2rem;
+        max-height: 33rem;
+        max-width: 54rem;
     }
 
     .Img-Box {
