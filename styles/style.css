@@ -126,6 +126,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
+    width: 100%;
 }
 
 label {
@@ -149,6 +150,7 @@ input {
     border-color: var(--grey);
     border-style: solid;
     border-width: 0.05rem;
+    min-width: 100%
 }
 
 input.Error {
@@ -268,6 +270,8 @@ input.Error {
         flex: 1;
         gap: 0.75rem;
         padding: 3.5rem 2.5rem 3.5rem 2.5rem;
+        align-items: center;
+        justify-content: center;
     }
 
     
