@@ -60,7 +60,7 @@ body {
 
 .Title {
     color: var(--blue-800);
-    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 0.75rem + 5vw, 2.9rem);
     font-weight: 700;
     padding: 0rem;
     margin: 0rem;
@@ -68,7 +68,7 @@ body {
 
 .Description {
     color: var(--blue-700);
-    font-size: 0.8125rem;
+    font-size: clamp(0.8125rem, 0.75rem + 5vw, 1rem);
     font-weight: 400;
     padding: 0rem;
     margin: 0rem;
@@ -101,7 +101,7 @@ body {
 
 .l-i {
     color: var(--blue-700);
-    font-size: 0.8125rem;
+    font-size: clamp(0.8125rem, 0.75rem + 5vw, 1rem);
     font-weight: 400;
     padding: 0rem;
     margin: 0rem;
