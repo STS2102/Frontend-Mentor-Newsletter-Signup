@@ -8,7 +8,7 @@
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   <link href="./styles/style.css", rel="stylesheet">
-  <style src="main.js" defer></style>
+  <script src="./main.js" defer></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,7 @@
 
         <form id="form" novalidate>
         <label for="email" type="text">Email address</label>
-        <input id="email" value="email@company.com"/>
+        <input name="email" id="email" value="email@company.com"/>
 
         <button class="Submit">Subscribe to monthly newsletter</button>
         </form>
@@ -52,12 +52,15 @@
 
   <!-- Success message start -->
    <div class="successCard">
-  Thanks for subscribing!
+    <div class="Success-Img-Box">
+      <img class="success-img" src="./assets/images/icon-success.svg" alt="Success Icon - a tick in a circular box">
+      </div>
+  <h1 class="Message-Title">Thanks for subscribing!</h1>
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
+  <p class = Message>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. 
+  Please open it and click the button inside to confirm your subscription.</p>
 
-  Dismiss message
+  <button class="Dismiss">Dismiss message</button>
   </div>
 </main>
   <!-- Success message end -->
