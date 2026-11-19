@@ -135,6 +135,12 @@ label {
     color: var(--blue-800);
 }
 
+.label-box {
+    display: flex;
+    flex-direction: row;
+
+}
+
 input {
     color: var(--grey);
     font-size: 0.8rem;
@@ -150,6 +156,16 @@ input.Error {
     color: var(--red);
     border-color: var(--red);
     background-color: var(--error-red);
+}
+
+.Error.off{
+    display: none;
+}
+
+.Error.on {
+    color: var(--red);
+    margin-left: auto;
+
 }
 
 .Submit {
@@ -180,7 +196,7 @@ input.Error {
         flex-direction: column;
         gap: 0.8rem;
         background-color: var(--white);
-        padding: 7rem 1rem 2.5rem 1rem;
+        padding: 5.5rem 1rem 1rem 1rem;
     }
 
     .Success-Img-Box {
@@ -215,11 +231,11 @@ input.Error {
         border-radius: 0.5rem;
         border-color: var(--white);
         border-style: solid;
-        padding: 0.8rem;
-        margin: 14rem 0rem 0rem 0rem;
+        padding: 1rem;
+        margin: 12.5rem 0rem 0rem 0rem;
     }
 
     .Dismiss:hover {
-        background-color: var(--blue-700);
+        background: linear-gradient(to right,var(--pink), var(--red), var(--orange)); 
     }
 }

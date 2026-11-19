@@ -3,6 +3,8 @@ const form = document.getElementById("form");
 const subscribeButton = document.querySelector(".Submit");
 const dismissButton = document.querySelector(".Dismiss");
 const inputArea = document.querySelector("input");
+const subscribeMessage = document.querySelector("strong");
+const errorLabel = document.querySelector(".Error.off");
 
 /* Adding Page-Swap Functionality */
 
@@ -16,12 +18,20 @@ form.addEventListener("submit", function (event) {
     }
     const email = formData.get("email");
 
-    if (email.includes("@") && email.includes(".com")) {
+    if (email.match(/^.*@/) && email.includes(".com")) {
         /* Change screen by adding success class. */
         pageRef.classList.add("success");
+        errorLabel.classList.remove("on");
+        errorLabel.classList.add("off");
+        inputArea.classList.remove("Error");
+        /* Add Email input to the message. */
+        subscribeMessage.innerHTML = `${email}`;
     }
     else {
+        errorLabel.classList.remove("off");
+        errorLabel.classList.add("on");
         inputArea.classList.add("Error");
+
     }
 })
 
